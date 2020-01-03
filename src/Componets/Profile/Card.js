@@ -8,7 +8,9 @@ import {
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
 
-
+/*
+This component produces 
+*/
 
 
 
@@ -45,7 +47,7 @@ const Card = ({props}) =>{
       return <img src={picSrc} alt={"Image of "+ props.first_name + " "+ props.last_name } id='profile_pic'/>
     }
     else{
-      return <img src='https://pbs.twimg.com/profile_images/1083069803236073472/oJzQVirc_400x400.jpg' id='profile_pic' alt="Profile picture" />
+      return <img src='./pictures/digitalAcademy.jpg ' id='profile_pic' alt="Profile picture" />
 
     }
 
