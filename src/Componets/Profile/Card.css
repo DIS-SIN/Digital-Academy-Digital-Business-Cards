@@ -12,7 +12,6 @@
 a {
     text-decoration: none;
     font-size: 22px;
-    color: black;
     padding-left: 1em;
   }
 
@@ -35,6 +34,7 @@ a {
 
 .card_icon{
     margin: 5px;
+    color: #3F2A56;
    
 }
 

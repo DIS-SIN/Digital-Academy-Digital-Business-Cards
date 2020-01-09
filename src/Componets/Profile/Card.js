@@ -9,7 +9,10 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 /*
-This component produces 
+This component produces a Profile card for each person in DA 
+For each person contact method , We first check if it's empty and then create an a ref with it's associated icon
+
+For rendering the person image we assume  it's in picture directory 
 */
 
 
@@ -19,9 +22,16 @@ const Card = ({props}) =>{
 
   let renderIcons =(props)=>{
     let icons=[];
-    let phone_number= <a href={props.phone_number}id="phone_number " aria-label="user email" className="card_icon" ><FontAwesomeIcon icon={faPhoneSquare}></FontAwesomeIcon></a> ;
-    let email= <a href={props.email} id="email" aria-label="user email" className="card_icon"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a>;
-      icons.push(phone_number,email);
+	if(props.phone_number){
+		let phone_number= <a href={props.phone_number}id="phone_number " aria-label="user email" className="card_icon" ><FontAwesomeIcon icon={faPhoneSquare}></FontAwesomeIcon></a> ;
+		 icons.push(phone_number);
+	}
+	if(props.email){
+		let email= <a href={props.email} id="email" aria-label="user email" className="card_icon"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a>;
+      icons.push(email);
+	}
+    
+
     if(props.github){
       let github= <a href={props.github} target="_blank" className="card_icon"><FontAwesomeIcon icon={faGithubSquare}></FontAwesomeIcon></a> 
         icons.push(github);
@@ -41,10 +51,11 @@ const Card = ({props}) =>{
   }
 
   let renderImage=(props)=>{
+	 let rootPicDirectory="pictures/"
     if(props.profile_pic){
       let picSrc=props.profile_pic;
 
-      return <img src={"pictures/"+picSrc} alt={"Image of "+ props.first_name + " "+ props.last_name } id='profile_pic'/>
+      return <img src={rootPicDirectory+picSrc} alt={"Image of "+ props.first_name + " "+ props.last_name } id='profile_pic'/>
     }
     else{
       return <img src='./pictures/digitalAcademy.jpg ' id='profile_pic' alt="Profile picture" />
