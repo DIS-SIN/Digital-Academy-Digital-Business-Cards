@@ -44,7 +44,7 @@ const Card = ({props}) =>{
     if(props.profile_pic){
       let picSrc=props.profile_pic;
 
-      return <img src={picSrc} alt={"Image of "+ props.first_name + " "+ props.last_name } id='profile_pic'/>
+      return <img src={"pictures/"+picSrc} alt={"Image of "+ props.first_name + " "+ props.last_name } id='profile_pic'/>
     }
     else{
       return <img src='./pictures/digitalAcademy.jpg ' id='profile_pic' alt="Profile picture" />
@@ -57,7 +57,8 @@ const Card = ({props}) =>{
     return( 
     <div className="Card">
       {renderImage(props)}
-      <h1>{props.first_name +" "+ props.last_name}</h1>
+      <h1>{props.first_name }</h1>
+	  <h1>{props.last_name}</h1>
       <p id="title">{props.role}</p>
       {renderIcons(props)}
       <br></br>
