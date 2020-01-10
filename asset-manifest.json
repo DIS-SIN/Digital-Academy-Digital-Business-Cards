@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Digital-Academy-Digital-Business-Cards/static/css/main.e23e5d77.chunk.css",
+    "main.js": "/Digital-Academy-Digital-Business-Cards/static/js/main.e5338ad3.chunk.js",
+    "main.js.map": "/Digital-Academy-Digital-Business-Cards/static/js/main.e5338ad3.chunk.js.map",
+    "runtime-main.js": "/Digital-Academy-Digital-Business-Cards/static/js/runtime-main.f9c3ce5d.js",
+    "runtime-main.js.map": "/Digital-Academy-Digital-Business-Cards/static/js/runtime-main.f9c3ce5d.js.map",
+    "static/js/2.ba325e66.chunk.js": "/Digital-Academy-Digital-Business-Cards/static/js/2.ba325e66.chunk.js",
+    "static/js/2.ba325e66.chunk.js.map": "/Digital-Academy-Digital-Business-Cards/static/js/2.ba325e66.chunk.js.map",
+    "index.html": "/Digital-Academy-Digital-Business-Cards/index.html",
+    "precache-manifest.02cba1ded5d9ce1b17d0dffb85cc0e69.js": "/Digital-Academy-Digital-Business-Cards/precache-manifest.02cba1ded5d9ce1b17d0dffb85cc0e69.js",
+    "service-worker.js": "/Digital-Academy-Digital-Business-Cards/service-worker.js",
+    "static/css/main.e23e5d77.chunk.css.map": "/Digital-Academy-Digital-Business-Cards/static/css/main.e23e5d77.chunk.css.map",
+    "static/js/2.ba325e66.chunk.js.LICENSE": "/Digital-Academy-Digital-Business-Cards/static/js/2.ba325e66.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9c3ce5d.js",
+    "static/js/2.ba325e66.chunk.js",
+    "static/css/main.e23e5d77.chunk.css",
+    "static/js/main.e5338ad3.chunk.js"
+  ]
+}
